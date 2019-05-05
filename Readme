@@ -1,0 +1,6 @@
+Add the following to crontab
+
+
+*/20 * * * * ~/Mail/fetch-mail.sh -q
+10 */8 * * * ~/Mail/fetch-mail.sh -f
+
