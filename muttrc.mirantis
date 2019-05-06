@@ -13,7 +13,6 @@ set postponed   = "+[Gmail]/Drafts"
 unset record
 
 unmailboxes *
-mailboxes "Mirantis"
 mailboxes `find ~/Mail/Mirantis/* -maxdepth 0 -type d | grep -v "tmp\|new\|cur" | sed 's|$|\"|g' | awk '{gsub (/^/,"\"")}1'| tr '\n' ' '`
 
 

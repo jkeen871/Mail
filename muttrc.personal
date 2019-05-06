@@ -13,7 +13,6 @@ set mbox        = "+[Gmail]/All Mail"
 set postponed   = "+[Gmail]/Drafts"
 unset record
 unmailboxes *
-mailboxes ="Personal"
 mailboxes `find ~/Mail/Gmail/* -maxdepth 0 -type d | grep -v "tmp\|new\|cur" | sed 's|$|\"|g' | awk '{gsub (/^/,"\"")}1'| tr '\n' ' '`
 
 
