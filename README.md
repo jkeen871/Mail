@@ -6,7 +6,10 @@ Clone Repository to your home directory :
 
 Install Required Packages
 
-	dnf install mutt neomutt w3m w3m-img offlineimap msmtp 
+
+    dnf -y install dnf-plugins-core
+    dnf -y copr enable flatcap/neomutt
+    dnf -y install mutt w3m w3m-img offlineimap msmtp neomutt
 	
 Copy dotrc files to home directory
 
